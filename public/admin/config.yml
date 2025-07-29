@@ -2,8 +2,10 @@ backend:
   name: github
   repo: bryancollins99/BAWT-test-site
   branch: main
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
+  auth_type: pkce
+  app_id: QS0FLRcFwlXhIewz2GukfyeM0xOz6RNh
+  auth_url: https://dev-48ugt1eksdc5adkv.us.auth0.com/authorize
+  auth_token_url: https://dev-48ugt1eksdc5adkv.us.auth0.com/oauth/token
 
 media_folder: "public/assets/images"
 public_folder: "/assets/images"
