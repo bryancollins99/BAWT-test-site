@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: bryancollins99/BAWT-test-site
   branch: main
+  auth_type: pkce
 
 media_folder: "public/assets/images"
 public_folder: "/assets/images"

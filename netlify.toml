@@ -5,9 +5,8 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# Enable Netlify Identity for CMS authentication
-[identity]
-  git_gateway = true
+# Auth0 configuration for CMS authentication
+# Note: Auth0 setup required in Netlify dashboard
 
 # Redirects for SPA behavior and admin access
 [[redirects]]
