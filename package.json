@@ -1,5 +1,5 @@
 {
-  "name": "pink-point",
+  "name": "become-a-writer-today",
   "type": "module",
   "version": "5.5.0",
   "scripts": {
@@ -19,6 +19,7 @@
     "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.12.0",
     "dayjs": "^1.11.13",
+    "decap-cms-app": "^3.8.2",
     "lodash.kebabcase": "^4.1.1",
     "remark-collapse": "^0.1.2",
     "remark-toc": "^9.0.0",

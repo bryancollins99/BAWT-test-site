@@ -1,0 +1,34 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/data/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Author", name: "author", widget: "string", default: "Admin"}
+      - {label: "Publish Date", name: "pubDatetime", widget: "datetime"}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Tags", name: "tags", widget: "list", default: ["writing"]}
+      - {label: "Canonical URL", name: "canonicalURL", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "About"
+        name: "about"
+        file: "src/pages/about.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "../layouts/AboutLayout.astro"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"} 
